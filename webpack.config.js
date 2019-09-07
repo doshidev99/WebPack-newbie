@@ -5,6 +5,14 @@ const config = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'build') // create folder o ngoai cung`
+    },
+    module: {
+        rules: [
+            {
+                use: 'babel-loader',
+                test: /\.js$/
+            }
+        ]
     }
 };
 

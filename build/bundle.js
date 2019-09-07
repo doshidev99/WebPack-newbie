@@ -93,7 +93,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// import sum from './math';\nconst sum = __webpack_require__(/*! ./math */ \"./src/math.js\");\n\nconst total = sum(3, 5);\nconsole.log(total);\n\ndocument.write(total);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("\n\nvar _math = __webpack_require__(/*! ./math */ \"./src/math.js\");\n\nvar _math2 = _interopRequireDefault(_math);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar total = (0, _math2.default)(3, 5); // const sum = require('./math');\n\nconsole.log(total);\n\ndocument.write(total);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -102,9 +103,10 @@ eval("// import sum from './math';\nconst sum = __webpack_require__(/*! ./math *
   !*** ./src/math.js ***!
   \*********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("const sum = (a, b) => {\n    return a + b;\n};\n\n// export default sum;\n\nmodule.exports = sum;\n\n\n//# sourceURL=webpack:///./src/math.js?");
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nvar sum = function sum(a, b) {\n    return a + b;\n};\n\n// export default sum;\n\n// module.exports = sum;\n\nexports.default = sum;\n\n//# sourceURL=webpack:///./src/math.js?");
 
 /***/ })
 
